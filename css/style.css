@@ -1,0 +1,391 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background:#151515 url(../images/bg4.jpg) no-repeat fixed left bottom;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+.header {
+  padding: 170px 30px 80px;
+}
+
+.site-title-sub {
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+}
+
+.site-title-sub::before,
+.site-title-sub::after {
+  content: '';
+  display: inline-block;
+  width: 120px;
+  height: 2px;
+  margin: 0 30px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+.site-title {
+  margin: 50px 0 40px;
+  font-size: 6.5rem;
+}
+
+.site-description {
+  margin-bottom: 50px;
+  color: #888;
+  font-size: 1.6rem;
+}
+
+
+.button {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #afa58d;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  margin: 10px;
+}
+.button:hover {
+  opacity: 0.7;
+}
+.button-showy {
+  background-color: #f1b400;
+}
+
+.about {
+  padding: 80px 30px;
+  background-color: #fff;
+  color: #333;
+}
+.heading {
+  display: inline-block;
+  position: relative;
+  margin: 30px 0 15px;
+  padding: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+.heading::before,
+.heading::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+.heading::before {
+  bottom: 5px;
+}
+
+
+.about-text {
+  margin: 30px;
+  line-height: 2.5;
+}
+
+.works {
+  background-color: #383634;
+  padding: 80px 0;
+}
+.works-wrapper {
+  display: table;
+  width: 100%;
+  margin-top: 60px;
+  table-layout: fixed;
+}
+.work-box {
+  position: relative;
+  display: table-cell;
+}
+.work-image {
+  display: block;
+  width: 100%;
+  margin: 0 0 5%;
+}
+.work-image:hover {
+ opacity: 0.6;
+}
+.button-ghost {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.skills {
+  padding: 80px 0;
+  background-color: #fff;
+  color: #333;
+}
+.skills-wrapper {
+  display: table;
+  width: 80%;
+  margin: 50px auto 0;
+  table-layout: fixed;
+}
+.skill-box{
+  display: table-cell;
+}
+.skill-icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+  border: 4px solid;
+  border-radius: 50%;
+  color: #f1b400;
+  font-size: 8rem;
+  line-height: 142px;
+}
+.skill-title {
+  margin: 0 20px 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.skill-text {
+  margin: 0 20px;
+  line-height: 2;
+  text-align: left
+}
+
+.contact {
+  padding: 80px 0 150px;
+}
+.contact-form {
+  width: 50%;
+  margin: 50px auto 0;
+}
+.contact-form input[type=text],
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+.contact-form textarea {
+  height: 150px;
+}
+.contact-form input[type=submit] {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 15px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+}
+.contact-form input[type=submit]:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.contact-form input[type=text]:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* footer */
+.footer {
+  padding: 12px 0;
+  font-size: 1.3rem;
+}
+
+/* メディアクエリ（スマートフォン対応） */
+@media (max-width: 1024px) {
+  body {
+    background-image: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-title-sub::before,
+  .site-title-sub::after {
+    display: block;
+    width: 80%;
+    margin: 10px auto ;
+  }
+  .site-title-sub {
+    font-size: 1.7rem;
+  }
+  .site-title {
+    margin-top: 35px;
+    font-size: 5rem;
+  }
+  .header {
+    padding-top: 60px;
+  }
+  .button:hover {
+    opacity: 1;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+  .body {
+    font-size: 1.3rem;
+  }
+  .about-text {
+    line-height: 1.8;
+  }
+
+  .works-wrapper,
+  .work-box {
+    display: block;
+    padding-bottom: 10px;
+  }
+  .button-ghost {
+    margin-top: 30px;
+  }
+  /* 狭い画面での表示では、画像は省いて縦のスクロールを減らす*/
+  .work-image {
+    display: none;
+  }
+
+  .skills-wrapper,
+  .skill-box {
+    display: block;
+  }
+  .skill-icon {
+    width: 30%;
+    height: 70%;
+    font-size: 5rem;
+    line-height: 92px;
+  }
+  .skill-box {
+    margin: 40px auto;
+  }
+  .skill-text {
+    margin: 0;
+  }
+  .contact-form {
+    width: 80%;
+  }
+  .contact {
+    padding-bottom: 80px;
+  }
+}
+
+/*メニュー*/
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background: #afa58d;
+}
+#nav {
+  position: fixed;
+  top: 0;
+  left: -40%;
+  width: 33%;
+  height: 75vh;
+  background-color: #fff;
+  transition: .7s;
+  z-index: 1;
+}
+#nav ul {
+  padding-top: 80px;
+}
+#nav ul li {
+  list-style-type: none;
+  font-size: 25px;
+}
+#nav a {
+  display: block;
+  text-decoration: none;
+  color: #151515;
+  margin: 0 15px;
+  padding: 10px;
+  transition: .6s;
+}
+#nav li a:hover {
+  color: #fff;
+  background-color: #f1b400;
+  border-bottom: none;
+}
+#hamburger {
+  display: block;
+  position: fixed;
+  top: 30px;
+  left: 40px;
+  width: 50px;
+  height: 44px;
+  cursor: pointer;
+  transition: 1s;
+  z-index: 2;
+}
+.inner_line {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 5px;
+  background-color: #f1b400;
+  transition: 1s;
+  border-radius: 4px;
+}
+
+#line1 {
+  top: 0;
+}
+#line2 {
+  top: 18px;
+}
+#line3 {
+  bottom: 0px;
+}
+.in {
+  transform: translateX(100%);
+}
+.line_1, .line_2, .line_3 {
+  background: #151515;
+}
+.line_1 {
+  transform: translateY(19px)rotate(-45deg);
+  top: 0;
+}
+.line_2 {
+  opacity: 0;
+}
+.line_3 {
+  transform: translateY(-19px) rotate(45deg);
+  bottom: 0;
+}
+
+@media screen and (max-width: 480px) {
+  #nav ul li {
+    font-size: 14px;
+  }
+  #hamburger {
+  top: 30px;
+  left: 20px;
+  width: 50px;
+  height: 44px;
+}
+  .inner_line {
+  width: 30px;
+  height: 5px;
+}
+#nav {
+  width: 40%;
+}
+}

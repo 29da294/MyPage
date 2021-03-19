@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,
+  minimum-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,800&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar" id="nav">
+      <ul>
+        <li><a href="#site-title">TOP</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#works">WORKS</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div id="hamburger">
+      <span class="inner_line" id="line1"></span>
+      <span class="inner_line" id="line2"></span>
+      <span class="inner_line" id="line3"></span>
+    </div>
+    <p class="site-title-sub">Web Programming Portfolio</p>
+    <h1 class="site-title" id="site-title">DAISUKE TSUKUDA</h1>
+    <p class="site-description">Check out some of my works.</p>
+    <div class="buttons">
+      <a class="button" href="#about">LEARN MORE</a>
+      <a class="button button-showy" href="#contact">SEND MESSAGE</a>
+    </div>
+  </header>
+  <section class="about" id="about">
+    <h2 class="heading">ABOUT ME</h2>
+    <p class="about-text">
+      お忙しい中、ご閲覧いただきありがとうございます。プログラマーとして仕事をしている佃 大輔と申します<br>
+      百貨店勤務、大手商社子会社のイベント営業職の経験を経て、プログラマーとして日々精進しております。
+    </p>
+    <p class="about-text">
+      このサイトはポートフォリオとして作成したサイトです。<br>
+      どうぞご覧ください。
+    </p>
+  </section>
+  <section class="works" id="works">
+    <h2 class="heading">WORKS</h2>
+    <div class="works-wrapper">
+      <div class="work-box">
+        <a href="#" class="image-link"><img class="work-image" src="images/tree.jpg" alt="制作1"></a>
+        <p class="work-text">
+          *画像はサンプルです*<br>
+          【準備中】<br>
+          使用ツール : <br>
+          <a href="#" class="button button-ghost">READ MORE</a>
+        </p>
+      </div>
+      <div class="work-box">
+        <a href="#" class="image-link"><img class="work-image" src="images/building.jpg" alt="制作2"></a>
+        <p class="work-text">
+          *画像はサンプルです*<br>
+          【準備中】<br>
+          使用ツール : <br>
+          <a href="#" class="button button-ghost">READ MORE</a>
+        </p>
+      </div>
+      <div class="work-box">
+        <a href="#" class="image-link"><img class="work-image" src="images/lake.jpg" alt="制作3"></a>
+        <p class="work-text">
+          *画像はサンプルです*<br>
+          【準備中】<br>
+          使用ツール : <br>
+          <a href="#" class="button button-ghost">READ MORE</a>
+        </p>
+      </div>
+      <div class="work-box">
+        <a href="#" class="image-link"><img class="work-image" src="images/sky.jpg" alt="制作4"></a>
+        <p class="work-text">
+          *画像はサンプルです*<br>
+          【準備中】<br>
+          使用ツール : <br>
+          <a href="#" class="button button-ghost">READ MORE</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="skills" id="skills">
+    <h2 class="heading">MY SKILLS</h2>
+    <div class="skills-wrapper">
+      <div class="skill-box">
+        <i class="skill-icon fas fa-search"></i>
+        <div class="skill-title">IDEA</div>
+        <p class="skill-text">
+          常に物事に深い興味や考えをもち、
+          何事にも好奇心旺盛です。
+          百貨店勤務時は、販売だけではなく、
+          商品の簡単な修理やケアまでできる
+          トップ販売員でした。
+        </p>
+      </div>
+      <div class="skill-box">
+        <i class="skill-icon fa fa-user-tie"></i>
+        <div class="skill-title">SALES</div>
+        <p class="skill-text">
+          百貨店での接客販売力、法人営業職での
+          経験など、相手の求めている
+          こと意識しながら考え、話すなど、
+          今までの経験で培われた
+          コミニュケーション力があります。
+        </p>
+      </div>
+      <div class="skill-box">
+        <i class="skill-icon fa fa-code"></i>
+        <div class="skill-title">CODING</div>
+        <p class="skill-text">
+          ・開発経験 : Java /SpringBoot / Postgresql<br>
+          ・学習中   : HTML / CSS / JavaScript / React(Redux)<br>
+          ・保有資格 : HTMLプロフェッショナル認定試験レベル1 / Java Silver SE11 /ITパスポート
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2 class="heading">CONTACT</h2>
+    <form class="contact-form" action="" method="post">
+      <input type="text" name="name" placeholder="NAME">
+      <textarea name="message" placeholder="MESSAGE"></textarea>
+      <input type="submit" value="SEND">
+    </form>
+  </section>
+  <footer class="footer">
+    <small>Copyright &copy; 2021 DAISUKE TSUKUDA All Rights Reserved</small>
+  </footer>
+  <script type="text/javascript" src="js/javaScript.js"></script>
+  <script src="lib/placeholders.min.js"></script>
+</body>
+</html>

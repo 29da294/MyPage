@@ -1,0 +1,12 @@
+function hamburger() {
+  document.getElementById("line1").classList.toggle('line_1');
+  document.getElementById("line2").classList.toggle('line_2');
+  document.getElementById("line3").classList.toggle('line_3');
+  document.getElementById("nav").classList.toggle('in');
+}
+let navHamburger = document.getElementById('hamburger');
+document.addEventListener("DOMContentLoaded", function () {
+  navHamburger.addEventListener('click', function () {
+    hamburger();
+  });
+});
